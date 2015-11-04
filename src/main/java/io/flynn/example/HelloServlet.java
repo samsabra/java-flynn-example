@@ -18,5 +18,6 @@ public class HelloServlet extends HttpServlet
         String port = System.getenv("PORT");
         String hostname = InetAddress.getLocalHost().getHostName();
         response.getWriter().println("Hello from Flynn on port " + port + " from container " + hostname);
+        response.getWriter().println("More excitement than you can handle!");
     }
 }
